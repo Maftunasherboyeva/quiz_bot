@@ -68,10 +68,12 @@ for (let i = 0; i < savollar.length; i++) {
 jami++;
 }
 if(nom=="stop"||nom=="chiqish"||nom=="exit"){
-  i=savollar.length;
+  // i=savollar.length;
+  break
 }
 
 }
 let afterTime= new Date();
 let vaqti = beforeTime - afterTime;
+// console.log(vaqti.getMilliseconds());
 alert(`tugadi  ${jami}/${savollar.length}  ${vaqti}`);
