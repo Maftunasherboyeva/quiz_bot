@@ -58,6 +58,16 @@ let savollar = [
             "d: 31-dekabr"
         ],
         correctAnswer:"a"
+    },
+    {
+      question:"7)Alisher Navoiy qachon tavallud topgan?",
+      answers:[
+        "a: 1336-yil 9-fevral",
+        "b: 1441-yil 9-fevral",
+        "c: 1501-yil 9-fevral",
+        "d: 1441-yil 8-fevral"
+      ],
+      correctAnswer:"b"
     }
   ];
 let jami=0;
@@ -68,10 +78,7 @@ for (let i = 0; i < savollar.length; i++) {
 jami++;
 }
 if(nom=="stop"||nom=="chiqish"||nom=="exit"){
-  // i=savollar.length;
-  break
-}
-
+  break;}
 }
 let afterTime= new Date();
 let vaqti = beforeTime - afterTime;
