@@ -61,7 +61,7 @@ let savollar = [
     }
   ];
 let jami=0;
-
+let beforeTime=new Date();
 for (let i = 0; i < savollar.length; i++) {
    let nom = prompt(savollar[i].question+"\n"+savollar[i].answers.join("\n")) 
    if(nom==savollar[i].correctAnswer){
@@ -72,4 +72,6 @@ if(nom=="stop"||nom=="chiqish"||nom=="exit"){
 }
 
 }
-alert("tugadi"+ jami+"/"+savollar.length);
+let afterTime= new Date();
+let vaqti = beforeTime - afterTime;
+alert(`tugadi  ${jami}/${savollar.length}  ${vaqti}`);
